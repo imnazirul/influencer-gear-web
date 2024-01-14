@@ -106,6 +106,7 @@ main {
 
 /* product-collection style */
 .procuct-collection {
+  margin: 100px 0;
   padding: 0 50px;
 }
 .procuct-collection h1 {
@@ -178,6 +179,42 @@ main {
   padding-right: 5px;
   cursor: pointer;
 }
+.featured-section {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+.featured-img {
+  width: 30%;
+}
+.featured-text {
+  width: 70%;
+}
+.featured-text h1 {
+  color: #0a0826;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 60px; /* 157.895% */
+}
+.featured-text p {
+  color: #6c6c6c;
+  font-weight: 600;
+  line-height: 28px; /* 175% */
+  margin-bottom: 10px;
+}
+.featured-text button {
+  background-color: var(--btn-color);
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 25px;
+  border: 0;
+}
+footer {
+  background: #0a0826;
+  padding: 50px 0;
+  color: #fff;
+  text-align: center;
+}
 @media screen and (max-width: 576px) {
   header {
     padding: 20px;
@@ -220,6 +257,17 @@ main {
   .product-card-collection {
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+  .featured-text {
+    width: 100%;
+  }
+  .featured-section img {
+    width: 100%;
+  }
+  .featured-section {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column-reverse;
   }
 }
 
