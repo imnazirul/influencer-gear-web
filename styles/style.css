@@ -74,7 +74,7 @@ nav > ul li a {
   padding: 10px 25px;
 }
 .banner-img {
-  width: 50%;
+  /* width: 50%; */
   max-width: 700px;
   padding: 20px;
   background-repeat: no-repeat;
@@ -85,4 +85,79 @@ nav > ul li a {
 .banner-img img {
   width: 100%;
   padding: 30px;
+}
+
+/* sponsors styles */
+
+.sponsors-section {
+  display: flex;
+  margin-top: 60px;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+}
+
+/* main styles */
+
+main {
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  nav > ul li:first-child {
+    margin-left: 0;
+  }
+  nav > ul li {
+    margin-left: 10px;
+  }
+  nav h1 {
+    text-align: center;
+  }
+  .banner {
+    gap: 50px;
+    flex-direction: column-reverse;
+  }
+  .banner-text {
+    text-align: center;
+  }
+  .banner-img {
+    width: 100%;
+  }
+
+  .sponsors-section {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .sponsors-section img {
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header {
+    padding: 20px;
+  }
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  nav > ul li:first-child {
+    margin-left: 0;
+  }
+  .sponsors-section {
+    flex-wrap: wrap;
+  }
+  .sponsors-section img {
+    flex-shrink: 0;
+  }
 }
