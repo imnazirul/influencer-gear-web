@@ -1,0 +1,88 @@
+/* font-family: 'Inter', sans-serif; */
+/* font-family: 'Manrope', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --btn-color: #e02c6d;
+  --text-color: #3a3a3a;
+}
+
+/* header styles */
+
+header {
+  padding: 50px 100px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav h1 {
+  color: #3a3a3a;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+nav > ul {
+  display: flex;
+  list-style: none;
+}
+nav > ul li {
+  margin-left: 30px;
+  font-weight: 600;
+}
+nav > ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* banner styles */
+
+.banner {
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.banner-text h1 {
+  color: var(--text-color);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 70px;
+}
+.banner-text p {
+  color: var(--text-color);
+  font-feature-settings: "clig" off, "liga" off;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.btn-primary {
+  border-radius: 41px;
+  background: #e02c6d;
+  font-weight: 700;
+  color: #fff;
+  border: 0;
+  padding: 10px 25px;
+}
+.banner-img {
+  width: 50%;
+  max-width: 700px;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-image: url("../images/Circle\ design.svg");
+  background-size: contain;
+}
+
+.banner-img img {
+  width: 100%;
+  padding: 30px;
+}
